@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASAI CALCULATOR</title>
+    <style>
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 80px);
+            grid-template-rows: auto repeat(4, 80px);
+            gap: 25px;
+            border-radius:20px;
+            padding: 20px;
+            width: 400px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        .display {
+            grid-column: 1 / -1;
+            padding: 5px;
+            text-align: right;
+            font-size: 50px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            border-radius:20px;
+        }
+
+        .btn {
+            background-color:white;
+            border-radius:20px;
+            cursor: pointer;
+            font-size: 30px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        }
+        .nam{
+            background-color: black;
+            color:white;      }
+
+        .cal {
+            font-size: 50px;
+            text-align: center;
+            color:rgb(22, 202, 187);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="cal">MASAI CALCUALTOR</h1>
+    <div class="calculator">
+        <div class="display">0</div>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn nam">/</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn nam">*</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn nam">-</button>
+        <button class="btn">C</button>
+        <button class="btn nam">0</button>
+        <button class="btn nam">=</button>
+        <button class="btn nam">+</button>
+    </div>
+
+</body>
+
+</html>
